@@ -1,0 +1,123 @@
+header.mui-bar.mui-bar-nav {
+  background-color: #f37d0f;
+}
+/* 购物车内的商品开始 */
+.list li {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* 选中时，打钩 */
+}
+.list li span {
+  width: 30px;
+  height: 30px;
+  background: url('../images/check_normal.png') no-repeat;
+  background-size: contain;
+}
+.list li span.checked {
+  background-image: url('../images/check_press.png');
+}
+.list li img {
+  width: 100px;
+  height: 100px;
+}
+.list li div h4 {
+  font-size: 20px;
+}
+.list li div p {
+  margin: 10px 0;
+  font-size: 20px;
+}
+.list li div em {
+  font-size: 20px;
+  color: #ff6c01;
+}
+.list li p {
+  display: flex;
+  line-height: 40px;
+  text-align: center;
+}
+.list li p i {
+  width: 20px;
+  height: 40px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+.list li p input {
+  width: 40px;
+  height: 40px;
+  border-radius: 0;
+  margin: 0;
+  padding: 0 0 0 15px;
+  border-width: 1px 0 1px 0;
+}
+/* 购物车内的商品结束 */
+/* 金额结算开始 */
+.total_money {
+  position: fixed;
+  z-index: 5;
+  bottom: 50px;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  height: 50px;
+  display: flex;
+  line-height: 50px;
+  text-align: center;
+}
+.total_money span {
+  flex: auto;
+  color: #ff4400;
+  font-size: 40px;
+}
+.total_money a {
+  flex: auto;
+  background-color: #ff4400;
+  color: #fff;
+}
+/* 金额结算结束 */
+/* 商品店铺开始 */
+.mui-row.shops {
+  font-size: 14px;
+}
+.mui-row.shops a {
+  margin: 2px;
+  display: block;
+}
+.mui-row.shops a img {
+  height: 203px;
+}
+.mui-row.shops span {
+  margin-top: 10px;
+  font-size: 18px;
+}
+.mui-row.shops p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #ccc;
+  margin-top: 5px;
+}
+.mui-row.shops span,
+.mui-row.shops p,
+.mui-row.shops em {
+  margin-left: 15px;
+  display: block;
+}
+.mui-row.shops em {
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: #f40;
+}
+.mui-row.shops em:before {
+  content: '￥';
+  font-size: 15px;
+  vertical-align: text-top;
+}
+.mui-row.shops em i {
+  float: right;
+  margin-top: -5px;
+  margin-right: 20px;
+  color: #919191;
+  font-size: 30px;
+}
+/* 商品店铺结束 */

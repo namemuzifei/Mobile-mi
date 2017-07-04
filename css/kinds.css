@@ -1,0 +1,56 @@
+header.mui-bar.mui-bar-nav {
+  background-color: #f37d0f;
+}
+/* 主体内容 */
+.mui-bar-nav ~ .mui-content {
+  padding-top: 0;
+  position: absolute;
+  top: 44px;
+  bottom: 50px;
+  left: 0;
+  right: 0;
+}
+.mui-bar-nav ~ .mui-content .mui-row {
+  height: 100%;
+  /* 左侧区域开始 */
+  /* 左侧区域结束 */
+  /* 右侧区域开始 */
+  /* 右侧区域结束 */
+}
+.mui-bar-nav ~ .mui-content .mui-row ul.left_area {
+  height: 100%;
+  border-right: 1px solid #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+}
+.mui-bar-nav ~ .mui-content .mui-row ul.left_area li {
+  padding: 20px 0;
+  color: #868686;
+}
+.mui-bar-nav ~ .mui-content .mui-row ul.left_area li.active {
+  color: #f37d0f;
+}
+.mui-bar-nav ~ .mui-content .mui-row .right_area {
+  overflow-y: auto;
+  /* 使页面右侧滚动，但是可视化页面主体不会滚动 */
+  height: 100%;
+  transition: all 1s;
+}
+.mui-bar-nav ~ .mui-content .mui-row .right_area section {
+  padding: 0 20px;
+  text-align: center;
+}
+.mui-bar-nav ~ .mui-content .mui-row .right_area section a {
+  display: block;
+}
+.mui-bar-nav ~ .mui-content .mui-row .right_area section h3 {
+  font-size: 20px;
+  margin: 20px 0;
+}
+.mui-bar-nav ~ .mui-content .mui-row .right_area section .mui-row div span {
+  display: block;
+  margin: 10px 0 15px;
+  color: #797979;
+}

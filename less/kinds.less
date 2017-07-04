@@ -1,0 +1,87 @@
+header.mui-bar.mui-bar-nav{
+    background-color:rgb(243,125,15);
+}
+
+/* 主体内容 */
+.mui-bar-nav~.mui-content{
+    padding-top:0;
+    position:absolute;
+    top:44px;
+    bottom:50px;
+    left:0;
+    right:0;
+    .mui-row{
+        height:100%;
+        /* 左侧区域开始 */
+        ul.left_area{
+            height:100%;
+            border-right:1px solid #000;
+            display: flex;
+            flex-direction:column;
+            justify-content:space-around;
+            text-align:center;
+            li{
+                padding:20px 0;
+                color:#868686;
+            }
+            li.active{
+                color:#f37d0f;
+            }
+        }
+        /* 左侧区域结束 */
+        
+        /* 右侧区域开始 */
+        .right_area{
+            overflow-y:auto;    /* 使页面右侧滚动，但是可视化页面主体不会滚动 */
+            height:100%;
+            transition:all 1s;
+            section{
+                padding:0 20px;
+                text-align:center;
+                a{
+                    display:block;
+                }
+                h3{
+                    font-size:20px;
+                    margin:20px 0;
+                }
+                .mui-row div span{
+                    display:block;
+                    margin:10px 0 15px;
+                    color:#797979;
+                }
+            }
+        }
+        /* 右侧区域结束 */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
